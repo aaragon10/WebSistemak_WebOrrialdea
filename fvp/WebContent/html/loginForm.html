@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LoginForm</title>
+		<link href="/fvp/css/styleSheet.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<h1>Federación Vasca de Patinaje / Euskal Herriko Irristaketa Federazioa</h1>
+			<h3>Gure orrialdean sartzeko formularioa</h3>
+		</header>
+		<section>
+			<form method="POST" action="/fvp/servlet/LoginServlet">
+				<table>
+	   				<tr>
+	   					<td>Erabiltzailea:</td>
+	   					<td><input name="user"/></td>
+	   				</tr>
+	   				<tr>
+	   					<td>Pasahitza:</td>
+	   					<td><input type="password" name="password"/></td>
+	   				</tr>
+	 			</table>
+				<button>Sartu</button>
+			</form>
+		</section>
+		<footer>Aitor Aragón</footer> 
+	</body>
+</html>
