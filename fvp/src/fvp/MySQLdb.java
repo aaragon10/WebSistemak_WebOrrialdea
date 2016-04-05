@@ -57,44 +57,14 @@ public class MySQLdb {
     	}
 	}
 	
-	
-	
-	
-	
-	
-//	public String getUserInfo(String user, String password) {
-//		String query = "SELECT * FROM fvp.users WHERE user='" + user + "' AND password='" + password + "';";
-//		System.out.println("     DB query: " + query);
-//		String username = null;
-//    	try {
-//	    	Statement st = this.conn.createStatement();
-//	    	ResultSet res = st.executeQuery(query); 
-//	    	while(res.next()) {
-//	    		username = res.getString("username");
-//        	}
-//        } catch(Exception e) {
-//        	System.out.println("Exception: " + e.getMessage());
-//    	}
-//    	return username;
-//	}
-//	
-//
-//	public String getUsername(String email, String password) {
-//		String query = "SELECT username FROM fvp.users WHERE user='" + user + "' AND password='" + password + "';";
-//		System.out.println("     DB query: " + query);
-//		String username = null;
-//    	try {
-//	    	Statement st = this.conn.createStatement();
-//	    	ResultSet res = st.executeQuery(query); 
-//	    	while(res.next()) {
-//	    		username = res.getString("username");
-//        	}
-//        } catch(Exception e) {
-//        	System.out.println("Exception: " + e.getMessage());
-//    	}
-//    	return username;
-//	}
-//	
-
-	
+	public void profilaAldatu(String user, String pass, String kalea, String zenbakia, String solairua, String letra, String postaKode, String hiria, String email, String telefonoa){
+		String query = "UPDATE users SET kalea='"+kalea+"', zenbakia='"+zenbakia+"', solairua='"+solairua+"', letra='"+letra+"',  postaKode='"+postaKode+"', hiria='"+hiria+"', email='"+email+"', telefonoa='"+telefonoa+"' WHERE user='"+user+"' AND pass='"+pass+"';";
+		System.out.println("     DB query: " + query);
+    	try {
+	    	Statement st = this.conn.createStatement();
+	    	ResultSet res = st.executeQuery(query); 	
+        } catch(Exception e) {
+        	System.out.println("Exception: " + e.getMessage());
+    	}
+	}
 }
