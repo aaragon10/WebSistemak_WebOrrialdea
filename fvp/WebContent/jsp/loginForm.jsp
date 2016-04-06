@@ -31,7 +31,7 @@
 		<button>Bidali</button>
 	</form>
 	</section>
-	<section> <a href="/fvp/html/logupForm.html"
+	<section> <a href="/fvp/html/loginForm.html"
 		style="text-decoration: none"> <font color="white">Sign Up</font>
 	</a> </section>
 	<footer>Aitor Aragón</footer>
