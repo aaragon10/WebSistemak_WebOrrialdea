@@ -11,13 +11,17 @@
 	<h1>Federación Vasca de Patinaje / Euskal Herriko Irristaketa Federazioa</h1>
 	<h3>Login orrialdea</h3>
 	</header>
-	
+	<% if((boolean)request.getAttribute("login_error")){ %>
 	<section>
-	<form method="POST" action="/shareinfo/MainServlet">
+		<h3>LOGIN ERROR!!</h3>
+	</section>
+	<% } %>
+	<section>
+	<form method="POST" action="/fvp/servlet/LoginServlet">
 		<table>
 			<tr>
-				<td>Izena:</td>
-				<td><input name="izena" /></td>
+				<td>User:</td>
+				<td><input name="user" /></td>
 			</tr>
 			<tr>
 				<td>Password:</td>
@@ -27,9 +31,6 @@
 		<button>Bidali</button>
 	</form>
 	</section>
-	<section> <a href="/fvp/html/loginForm.html"
-		style="text-decoration: none"> <font color="white">Sign Up</font>
-	</a> </section>
 	<footer>Aitor Aragón</footer>
 </body>
 </html>

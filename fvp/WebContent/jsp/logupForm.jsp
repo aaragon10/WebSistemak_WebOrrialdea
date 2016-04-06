@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>LogUp Form</title>
+<link href="/fvp/css/styleSheet.css" rel="stylesheet" />
 </head>
 <body>
 	<header>
@@ -12,7 +13,7 @@
 		<h3>Logup orrialdea</h3>
 	</header>
 		<section>
-	<form method="POST" action="/fvp/servlet/SignupServlet">
+	<form method="POST" action="/fvp/SignupServlet">
 		<table>
 			<tr>
 				<td>User:</td>
@@ -62,9 +63,6 @@
 		<button>Bidali</button>
 	</form>
 	</section>
-	<section> <a href="/fvp/html/logupForm.html"
-		style="text-decoration: none"> <font color="white">Sign Up</font>
-	</a> </section>
 	<footer>Aitor Aragón</footer>
 </body>
 </html>
