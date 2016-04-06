@@ -43,7 +43,7 @@ public class SignupServlet extends HttpServlet{
 		System.out.println("     Updating users table in the database");
 		
 		System.out.println("     Redirecting the user to loginForm.html");
-		response.sendRedirect("/html/loginForm.html");
+		response.sendRedirect("/html/logeatutakoAukerak.html");
 		
         System.out.println("---> Exiting doPost() SignupServlet");
     }

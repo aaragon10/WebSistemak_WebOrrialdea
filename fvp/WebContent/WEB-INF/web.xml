@@ -6,7 +6,7 @@
   </welcome-file-list>
   
   <session-config>
-    <session-timeout>5</session-timeout>
+    <session-timeout>1000</session-timeout>
   </session-config>
     <listener>
     <listener-class>shareinfo.MySessionListener</listener-class>
@@ -15,7 +15,6 @@
     <servlet-name>SignupServlet</servlet-name>
     <servlet-class>shareinfo.SignupServlet</servlet-class>
   </servlet>
-  
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
     <servlet-class>shareinfo.LoginServlet</servlet-class>
