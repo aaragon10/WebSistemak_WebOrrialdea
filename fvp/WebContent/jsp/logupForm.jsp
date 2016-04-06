@@ -13,7 +13,7 @@
 		<h3>Logup orrialdea</h3>
 	</header>
 		<section>
-	<form method="POST" action="/fvp/servlet/SignupServlet">
+	<form method="POST" action="/fvp/SignupServlet">
 		<table>
 			<tr>
 				<td>User:</td>

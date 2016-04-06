@@ -42,8 +42,8 @@ public class SignupServlet extends HttpServlet{
 		mySQLdb.setUserInfo(username, password, izenOsoa, kalea, zenbakia, solairua, letra, postaKode, hiria, email, telefonoa);
 		System.out.println("     Updating users table in the database");
 		
-		System.out.println("     Redirecting the user to loginForm.html");
-		response.sendRedirect("/html/logeatutakoAukerak.html");
+		System.out.println("     Redirecting the user to loginForm.jsp");
+		response.sendRedirect("/html/loginForm.jsp");
 		
         System.out.println("---> Exiting doPost() SignupServlet");
     }
