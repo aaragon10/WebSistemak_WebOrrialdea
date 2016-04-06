@@ -52,18 +52,18 @@ public class MainServlet extends HttpServlet{
         		RequestDispatcher rd = request.getRequestDispatcher("/html/loginForm.html");
     			rd.forward(request, response);
     		} else {
-    			String message = request.getParameter("username");
-    			if(message != null) {
-    				HttpSession session = request.getSession();
-    				String username = (String) session.getAttribute("username");
-    				mySQLdb.setUserInfo(message, username);
-    			}
+//    			String message = request.getParameter("username");
+//    			if(message != null) {
+//    				HttpSession session = request.getSession();
+//    				String username = (String) session.getAttribute("username");
+//    				mySQLdb.setUserInfo(message, username);
+//    			}
+//    		
+//    			ArrayList<PerfilInfo> userList = mySQLdb.getAllMessages();
+//    			request.setAttribute("messageList", messageList);
     		
-    			ArrayList<PerfilInfo> userList = mySQLdb.getAllMessages();
-    			request.setAttribute("messageList", messageList);
-    		
-    			System.out.println("     Redirecting the user to viewMessages.jsp");
-    			RequestDispatcher rd = request.getRequestDispatcher("/jsp/viewMessages.jsp");
+    			System.out.println("     Redirecting the user to logeatutakoAukerak.jsp");
+    			RequestDispatcher rd = request.getRequestDispatcher("/html/logeatutakoAukerak.html");
     			rd.forward(request, response);
     		}
     	}

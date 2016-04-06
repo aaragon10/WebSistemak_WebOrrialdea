@@ -11,17 +11,13 @@
 	<h1>Federación Vasca de Patinaje / Euskal Herriko Irristaketa Federazioa</h1>
 	<h3>Login orrialdea</h3>
 	</header>
-	<% if((boolean)request.getAttribute("login_error")){ %>
+	
 	<section>
-		<h3>LOGIN ERROR!!</h3>
-	</section>
-	<% } %>
-	<section>
-	<form method="POST" action="/fvp/servlet/LoginServlet1">
+	<form method="POST" action="/shareinfo/MainServlet">
 		<table>
 			<tr>
-				<td>Email:</td>
-				<td><input name="email" /></td>
+				<td>Izena:</td>
+				<td><input name="izena" /></td>
 			</tr>
 			<tr>
 				<td>Password:</td>
