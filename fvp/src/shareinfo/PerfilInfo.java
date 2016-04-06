@@ -1,4 +1,4 @@
-package fvp;
+package shareinfo;
 
 public class PerfilInfo {
 	private String username;

@@ -1,4 +1,4 @@
-package fvp;
+package shareinfo;
 
 import java.util.*;
 import javax.servlet.*;

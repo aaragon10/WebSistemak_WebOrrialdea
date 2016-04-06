@@ -1,8 +1,10 @@
-package fvp;
+package shareinfo;
 
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
+
+import helper.db.MySQLdb;
 
 public class SignupServlet extends HttpServlet{
 	
@@ -21,16 +23,16 @@ public class SignupServlet extends HttpServlet{
     	System.out.println("---> Entering doPost() SignupServlet");
     	
     	String username = request.getParameter("user");
-    	String password = request.getParameter("password");
-    	String izenOsoa = request.getParameter("name");
-    	String kalea = request.getParameter("street");
-    	String zenbakia = request.getParameter("number");
-    	String solairua = request.getParameter("floor");
-    	String letra = request.getParameter("side");
-    	String postaKode = request.getParameter("postcode");
-    	String hiria = request.getParameter("city");
-    	String email = request.getParameter("mail");
-    	String telefonoa = request.getParameter("telephone");
+    	String password = request.getParameter("pass");
+    	String izenOsoa = request.getParameter("izena");
+    	String kalea = request.getParameter("kalea");
+    	String zenbakia = request.getParameter("zenbakia");
+    	String solairua = request.getParameter("solairua");
+    	String letra = request.getParameter("letra");
+    	String postaKode = request.getParameter("postaKode");
+    	String hiria = request.getParameter("hiria");
+    	String email = request.getParameter("email");
+    	String telefonoa = request.getParameter("telefonoa");
 		
 		
 		

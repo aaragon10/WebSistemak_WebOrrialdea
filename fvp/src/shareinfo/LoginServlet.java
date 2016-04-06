@@ -1,13 +1,15 @@
-package fvp;
+package shareinfo;
 
 import java.io.*;
 import java.util.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
+import helper.db.MySQLdb;
 
 
-public class LoginServlet1 extends HttpServlet{
+
+public class LoginServlet extends HttpServlet{
 
 	private MySQLdb mySQLdb;
 	
@@ -67,3 +69,5 @@ public class LoginServlet1 extends HttpServlet{
 		System.out.println("---> Exiting doGet() LoginServlet");
     }
 }
+
+

@@ -1,9 +1,11 @@
-package fvp;
+package shareinfo;
 
 import java.io.*;
 import java.util.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
+
+import helper.db.MySQLdb;
 
 
 public class MainServlet extends HttpServlet{
