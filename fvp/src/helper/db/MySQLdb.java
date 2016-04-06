@@ -67,4 +67,20 @@ public class MySQLdb {
         	System.out.println("Exception: " + e.getMessage());
     	}
 	}
+	
+	public String getUsername(String email, String pass){
+		String query = "SELECT user from fvp.users WHERE email='"+email+"' AND pass='"+pass+"';";
+		System.out.println("     DB query: " + query);
+		String username = null;
+    	try {
+	    	Statement st = this.conn.createStatement();
+	    	ResultSet res = st.executeQuery(query);
+	    	while(res.next()){
+	    		username = res.getString("username");
+	    	}
+        } catch(Exception e) {
+        	System.out.println("Exception: " + e.getMessage());
+    	}
+    	return username;
+	}
 }
